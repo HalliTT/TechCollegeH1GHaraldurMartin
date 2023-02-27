@@ -54,6 +54,7 @@ namespace Lommeregner
 
                     //Write out reulst
                     Console.WriteLine(numberMultiOneInt + "*" + numberMultiTwoInt + " = " + multi);
+                    Console.WriteLine("hej")
                     break;
                 default:
                     Console.WriteLine("Sorry try agian");
