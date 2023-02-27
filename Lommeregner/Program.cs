@@ -18,7 +18,7 @@ namespace Lommeregner
             Console.WriteLine(resultat);
             Console.WriteLine("Press 1 to minus or 2 to multiple ");
             string menu = Console.ReadLine();
-
+            .
             switch (menu)
             {
                 case "1":
