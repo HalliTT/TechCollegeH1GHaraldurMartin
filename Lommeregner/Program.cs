@@ -27,7 +27,7 @@ namespace Lommeregner
 
             //Read what is written and save in variable menu
             string menu = Console.ReadLine();
-
+            .
             switch (menu)
             {
                 case "1":
