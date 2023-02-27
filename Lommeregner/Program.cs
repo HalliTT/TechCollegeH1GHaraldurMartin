@@ -9,52 +9,58 @@ namespace Lommeregner
         double resultat;
         static void Main(string[] args)
         {
-            Console.WriteLine("Tal 1");
-            double tal1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("tal 2");
-            double tal2 = Convert.ToDouble(Console.ReadLine());
-            double resultat = tal1 + tal2;
-            Console.Writeline("resultat er");
-            Console.WriteLine(resultat);
-            Console.WriteLine("Press 1 to minus or 2 to multiple ");
+            //Save number one as Double
+            Console.WriteLine("Write first number");
+            double numberOne = Convert.ToDouble(Console.ReadLine());
+
+            //Save number two as Double
+            Console.WriteLine("Write second number");
+            double numberTwo = Convert.ToDouble(Console.ReadLine());
+
+            //wite out
+            Console.WriteLine("------------------");
+            Console.WriteLine("Press 1 to add ");
+            Console.WriteLine("Press 2 to minus ");
+            Console.WriteLine("Press 3 to multiple ");
+            Console.WriteLine("Press 4 to divide ");
+            Console.WriteLine("------------------");
+
+            //Read what is written and save in variable menu
             string menu = Console.ReadLine();
 
             switch (menu)
             {
                 case "1":
-                    Console.WriteLine("MINUS");
-                    Console.WriteLine("Write first number");
-                    string numberMinusOne = Console.ReadLine();
-                    Console.WriteLine("Write second number");
-                    string numberMinusTwo = Console.ReadLine();
-
-                    //Transform string to int
-                    int numberMinusOneInt = Int32.Parse(numberMinusOne);
-                    int numberMinusTwoInt = Int32.Parse(numberMinusTwo);
-
-                    //calculation
-                    int minus = numberMinusOneInt - numberMinusTwoInt;
+                    Console.WriteLine("ADD");
+                    //calculation add
+                    double resultAdd = numberOne + numberTwo;
 
                     //Write out reulst
-                    Console.WriteLine(numberMinusOneInt + "-" + numberMinusTwoInt + " = " + minus);
+                    Console.WriteLine(numberOne + "+" + numberTwo + " = " + resultAdd);
                     break;
                 case "2":
-                    Console.WriteLine("MULTIPLE");
-                    Console.WriteLine("Write first number");
-                    string numberMultiOne = Console.ReadLine();
-                    Console.WriteLine("Write second number");
-                    string numberMultiTwo = Console.ReadLine();
-                    
-                    //Transform string to int
-                    int numberMultiOneInt = Int32.Parse(numberMultiOne);
-                    int numberMultiTwoInt = Int32.Parse(numberMultiTwo);
-
-                    //calculation
-                    int multi = numberMultiOneInt * numberMultiTwoInt;
+                    Console.WriteLine("MINUS");
+                    //calculation add
+                    double resultMinus = numberOne - numberTwo;
 
                     //Write out reulst
-                    Console.WriteLine(numberMultiOneInt + "*" + numberMultiTwoInt + " = " + multi);
-                    Console.WriteLine("hej")
+                    Console.WriteLine(numberOne + "-" + numberTwo + " = " + resultMinus);
+                    break;
+                case "3":
+                    Console.WriteLine("MULTIPLE");
+                    //calculation add
+                    double resultMultiple = numberOne * numberTwo;
+
+                    //Write out reulst
+                    Console.WriteLine(numberOne + "*" + numberTwo + " = " + resultMultiple);
+                    break;
+                case "4":
+                    Console.WriteLine("DIVIDE");
+                    //calculation add
+                    double resultDivide = numberOne / numberTwo;
+
+                    //Write out reulst
+                    Console.WriteLine(numberOne + "/" + numberTwo + " = " + resultDivide);
                     break;
                 default:
                     Console.WriteLine("Sorry try agian");
