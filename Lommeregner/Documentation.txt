@@ -1,0 +1,15 @@
+﻿*Names:
+  Haraldur
+  Martin
+
+*What is the reasson for documenting.
+  -Describe the code, so you can recall it after some time and so another one can se what the code is doing and used for.
+
+*What will you do if you have to describe a program?
+  -Selv described code when possible.
+  -Describe what the function does.
+  -What the param are (bool, string) andwhat they do.
+  -Describe return or what it is used for.
+
+*What tool will you use?
+  -We do not know, we will use what the code program will provide for us.

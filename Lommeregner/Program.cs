@@ -4,6 +4,15 @@ namespace Lommeregner
 {
     class Program
     {
+        /// <summary>
+        /// This code is calculator with +, -, * and / function.
+        /// <para>
+        /// 
+        /// </para>
+        /// <return>
+        ///
+        /// </return>
+        /// </summary>
         double tal1;
         double tal2;
         double resultat;
@@ -17,6 +26,7 @@ namespace Lommeregner
             Console.WriteLine("Write second number");
             double numberTwo = Convert.ToDouble(Console.ReadLine());
 
+            
             //wite out
             Console.WriteLine("------------------");
             Console.WriteLine("Press 1 to add ");
