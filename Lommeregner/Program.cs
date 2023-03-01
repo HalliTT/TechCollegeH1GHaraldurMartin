@@ -5,29 +5,27 @@ namespace Lommeregner
     class Program
     {
         /// <summary>
-        /// This code is calculator with +, -, * and / function.
+        /// Main code is calculator with +, -, * and / function.
         /// <para>
-        /// 
+        /// numberOne {double} = First value writen
+        /// numberTwo {double} = Second value writen
         /// </para>
         /// <return>
-        ///
+        /// This function does not return anything
         /// </return>
         /// </summary>
-        double tal1;
-        double tal2;
-        double resultat;
-        static void Main(string[] args)
+        static double numberOne; double numberTwo; void Main(string[] args)
         {
-            //Save number one as Double
+            //Save first number writen in console as Double
             Console.WriteLine("Write first number");
-            double numberOne = Convert.ToDouble(Console.ReadLine());
+            numberOne = Convert.ToDouble(Console.ReadLine());
 
             //Save number two as Double
             Console.WriteLine("Write second number");
-            double numberTwo = Convert.ToDouble(Console.ReadLine());
+            numberTwo = Convert.ToDouble(Console.ReadLine());
 
             
-            //wite out
+            //wite out Menu
             Console.WriteLine("------------------");
             Console.WriteLine("Press 1 to add ");
             Console.WriteLine("Press 2 to minus ");
@@ -38,6 +36,7 @@ namespace Lommeregner
             //Read what is written and save in variable menu
             string menu = Console.ReadLine();
             
+            //Depend on what is writen go to that
             switch (menu)
             {
                 case "1":
@@ -50,7 +49,7 @@ namespace Lommeregner
                     break;
                 case "2":
                     Console.WriteLine("MINUS");
-                    //calculation add
+                    //calculation minus
                     double resultMinus = numberOne - numberTwo;
 
                     //Write out reulst
@@ -58,7 +57,7 @@ namespace Lommeregner
                     break;
                 case "3":
                     Console.WriteLine("MULTIPLE");
-                    //calculation add
+                    //calculation multiple
                     double resultMultiple = numberOne * numberTwo;
 
                     //Write out reulst
@@ -66,13 +65,14 @@ namespace Lommeregner
                     break;
                 case "4":
                     Console.WriteLine("DIVIDE");
-                    //calculation add
+                    //calculation divide
                     double resultDivide = numberOne / numberTwo;
 
                     //Write out reulst
                     Console.WriteLine(numberOne + "/" + numberTwo + " = " + resultDivide);
                     break;
                 default:
+                    //If non of the above write this
                     Console.WriteLine("Sorry try agian");
                     break;
             }
